@@ -1,0 +1,65 @@
+.bg {
+    -fx-background-image: url("background.jpg");
+    -fx-background-size: cover;
+}
+
+.titleStyle {
+    -fx-font-size: 48px;
+    -fx-text-fill: white; /* Colore del testo */
+    -fx-font-family: "Arial Black";
+    -fx-font-weight: bold; /* Testo in grassetto */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); /* Aggiunge un effetto drop shadow */
+    -fx-padding: 20px; /* Aggiunge spaziatura intorno al testo */
+    -fx-background-color: linear-gradient(to bottom, #4e79a7, #283e51); /* Sfondo con gradiente blu */
+    -fx-background-radius: 10px; /* Arrotonda i bordi dello sfondo */
+    -fx-border-color: #36648b; /* Colore del bordo */
+    -fx-border-width: 3px; /* Spessore del bordo */
+    -fx-border-radius: 10px; /* Arrotonda i bordi del bordo */
+}
+
+
+
+.centeredVBox {
+    -fx-alignment: center; /* Centra il contenuto del VBox */
+    -fx-margin-top: 10vh; /* Margine superiore del 10% dell'altezza dello schermo */
+    -fx-margin-bottom: 10%; /* Margine inferiore del 10% dell'altezza del contenitore padre */
+    -fx-margin-left: 20%; /* Margine sinistra del 20% della larghezza del contenitore padre */
+    -fx-margin-right: 20%; /* Margine destra del 20% della larghezza del contenitore padre */
+}
+
+.mainContent {
+    -fx-alignment: center; /* Centra il contenuto del VBox */
+    -fx-spacing: 20px; /* Aggiunge spazio tra i nodi del VBox */
+    -fx-padding: 20px; /* Aggiunge spazio intorno al contenuto */
+    -fx-margin-bottom: -20px; /* Sposta il contenuto verso l'alto */
+}
+
+/* style.css */
+
+.menuTitle {
+    -fx-font-size: 36px; /* Dimensione del testo */
+    -fx-text-fill: white; /* Colore del testo */
+    -fx-padding: 10px; /* Spaziatura interna */
+    -fx-background-color: linear-gradient(to bottom, #4e79a7, #283e51); /* Linear gradient tendente al blu */
+    -fx-background-radius: 5px; /* Arrotonda i bordi */
+}
+
+
+
+.menuButton {
+    -fx-background-color: linear-gradient(to bottom, #4e79a7, #283e51); /* Linear gradient tendente al blu */
+    -fx-text-fill: white; /* Colore del testo */
+    -fx-font-size: 16px; /* Dimensione del testo */
+    -fx-padding: 10px 20px; /* Spaziatura interna del pulsante */
+    -fx-background-radius: 5px; /* Arrotonda i bordi */
+    -fx-border-radius: 5px; /* Arrotonda i bordi */
+}
+
+.menuButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #5681c2, #2e4a66); /* Cambia colore al passaggio del mouse */
+}
+
+.menuButton:pressed {
+    -fx-background-color: linear-gradient(to bottom, #415b82, #203041); /* Cambia colore quando premuto */
+}
+
