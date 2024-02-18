@@ -11,6 +11,7 @@ org/sship/starship/commandpattern/ICommand.class
 org/sship/starship/commandpattern/MovementInvoker.class
 org/sship/starship/JSONHandler/JSONHandler.class
 org/sship/starship/ObserverPatternAObject/EnemySubject.class
+org/sship/starship/ClientController/ReceiverThread.class
 org/sship/starship/commandpattern/MoveDownCommand.class
 org/sship/starship/MapController.class
 org/sship/starship/observerPatternNodeMap/BoundaryMap.class
@@ -21,6 +22,7 @@ org/sship/starship/observerPatternNodeMap/HashMapSubject.class
 org/sship/starship/player/AObject.class
 org/sship/starship/observerPatternNodeMap/Subject.class
 org/sship/starship/TimeController$1.class
+org/sship/starship/ClientController/SenderThread.class
 org/sship/starship/ObserverPatternAObject/SubjectAObject.class
 org/sship/starship/ObserverPatternAObject/MapObserver.class
 org/sship/starship/MenuController.class

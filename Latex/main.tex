@@ -376,17 +376,14 @@ mvn clean javafx:run
 
 Per compilare il server eseguire il seguente comando:
 \begin{commandbox}
-javac -cp ServerUDP/lib/json-20200518.jar:. ServerUDP/src/Main.java\newline
-javac -cp ServerUDP/lib/json-20200518.jar:. ServerUDP/src/JSONHandler.java \newline
-javac -cp ServerUDP/lib/json-20200518.jar:. ServerUDP/src/UDPServer.java \newline
-javac -cp ServerUDP/lib/json-20200518.jar:. ServerUDP/src/RequestHandler.java
+javac -cp ServerUDP/lib/json-20200518.jar:. ServerUDP/src/*.java
 \end{commandbox}
 
 Per avviare il server eseguire i seguenti comandi:
 \begin{commandbox}
 \begin{verbatim}
 cd ServerUDP/src
-java -cp ServerUDP/lib/json-20200518.jar:. Main
+java -cp ../lib/json-20200518.jar:. Main
 \end{verbatim}
 \end{commandbox}
 

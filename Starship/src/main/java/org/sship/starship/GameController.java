@@ -56,10 +56,10 @@ public class GameController {
                 mapController.removeAlert();
                 timeController.stopTimerCollision();
             }
-            if (event.getCode() == KeyCode.LEFT) {
+            if (event.getCode() == KeyCode.LEFT && starship.getPositionX() >= 1) {
                 movementInvoker.setCommand(toLeft);
                 movementInvoker.invokeCommand();
-            } else if (event.getCode() == KeyCode.RIGHT) {
+            } else if (event.getCode() == KeyCode.RIGHT && starship.getPositionX() <= 38) {
                 movementInvoker.setCommand(toRight);
                 movementInvoker.invokeCommand();
             } else if (event.getCode() == KeyCode.P) {
@@ -124,6 +124,9 @@ public class GameController {
         mapController.changeAlert("GAME OVER");
         try {
             client.sendCloseMessage();
+            Thread.sleep(500);
+            client.stopSenderThread();
+            client.stopReceiverThread();
             Thread.sleep(500);
             client.closeSocket();
         } catch (Exception e) {
