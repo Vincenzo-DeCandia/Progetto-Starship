@@ -49,8 +49,7 @@ public class RequestHandler extends Thread {
                     }
                     Thread.sleep(2000); // Pause for 2 seconds before sending the next batch of positions
                 }
-            } catch (InterruptedException | IOException e) {
-                // Thread interrupted, likely due to stop() method call
+            } catch (InterruptedException | IOException e) {       
                 System.out.println("Thread interrupted");
             }
         }
