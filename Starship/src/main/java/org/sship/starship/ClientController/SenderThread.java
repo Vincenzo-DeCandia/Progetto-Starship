@@ -53,7 +53,7 @@ public class SenderThread extends Thread {
      *
      * @return true if there is data to be sent, false otherwise
      */
-    public synchronized boolean thereIsDataToSend() {
+    public boolean thereIsDataToSend() {
         return !jsonObjectStack.isEmpty();
     }
 
@@ -62,7 +62,7 @@ public class SenderThread extends Thread {
      *
      * @param jsonObject The JSONObject to be sent
      */
-    public synchronized void pushJSONObject(JSONObject jsonObject) {
+    public void pushJSONObject(JSONObject jsonObject) {
         jsonObjectStack.push(jsonObject);
     }
 
@@ -71,7 +71,7 @@ public class SenderThread extends Thread {
      *
      * @return The next JSONObject to be sent
      */
-    public synchronized JSONObject getJSON() {
+    public JSONObject getJSON() {
         return jsonObjectStack.pop();
     }
 
