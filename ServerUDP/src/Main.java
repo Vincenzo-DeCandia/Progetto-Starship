@@ -15,6 +15,13 @@ public class Main {
     public static void main(String[] args) throws IOException {
         // Create a new UDPServer instance listening on port 5000
         UDPServer udpServer = new UDPServer(5000);
+
+        // Add a shutdown hook to handle clean socket closure
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            System.out.println("Shutting down server...");
+            udpServer.closeSocket(); // Close the socket before terminating the server
+        }));
+        
         // Start the UDP server
         udpServer.start();
     }
