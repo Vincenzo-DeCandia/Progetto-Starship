@@ -67,4 +67,10 @@ public class UDPServer {
             socket.close();
         }
     }
+    /**
+     * Closes the UDP socket.
+     */
+    public void closeSocket() {
+        socket.close();
+    }
 }
